@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社ザードニック - トップページリニューアル案</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Noto Sans JPをメインフォントに設定 */
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        /* アニメーション効果 */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="#">株式会社ザードニック</a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-green-700 transition duration-300">事業内容</a>
+                <a href="#strengths" class="text-gray-600 hover:text-green-700 transition duration-300">私たちの強み</a>
+                <a href="#company" class="text-gray-600 hover:text-green-700 transition duration-300">会社概要</a>
+                <a href="#access" class="text-gray-600 hover:text-green-700 transition duration-300">アクセス</a>
+                <a href="#privacy" class="text-gray-600 hover:text-green-700 transition duration-300">個人情報保護方針</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#services" class="block py-2 text-gray-600 hover:text-green-700">事業内容</a>
+            <a href="#strengths" class="block py-2 text-gray-600 hover:text-green-700">私たちの強み</a>
+            <a href="#company" class="block py-2 text-gray-600 hover:text-green-700">会社概要</a>
+            <a href="#access" class="block py-2 text-gray-600 hover:text-green-700">アクセス</a>
+            <a href="#privacy" class="block py-2 text-gray-600 hover:text-green-700">個人情報保護方針</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="bg-green-700 py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 fade-in-up">課題を解き明かし、未来を実装する。</h1>
+                <p class="text-lg md:text-xl text-green-100 max-w-3xl mx-auto fade-in-up" style="transition-delay: 0.2s;">
+                    お客様に寄り添うコンサルティングと、それを形にする確かな技術力でビジネスを成功に導きます。
+                </p>
+            </div>
+        </section>
+
+        <!-- 事業内容セクション -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">事業内容</h2>
+                    <p class="text-gray-600 mt-2">お客様のビジネスを成功に導くサービス</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- カード1: コンサルティング -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in-up">
+                        <div class="mb-4">
+                            <svg class="w-16 h-16 mx-auto text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">コンサルティング</h3>
+                        <p class="text-gray-600">お客様の課題の明確化と解決方法の提示</p>
+                    </div>
+                    <!-- カード2: システム統合・運用サポート -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="mb-4">
+                           <svg class="w-16 h-16 mx-auto text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">システム統合・運用サポート</h3>
+                        <p class="text-gray-600">仕組みや組織の変更、特定の課題の解決、基幹システムや経営情報に関連する仕組みの導入、システム運用のサポート</p>
+                    </div>
+                     <!-- カード3: プロジェクト・マネジメント -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in-up">
+                        <div class="mb-4">
+                            <svg class="w-16 h-16 mx-auto text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">プロジェクト・マネジメント</h3>
+                        <p class="text-gray-600">プラン・デザイン・開発・運用の各段階に必要な作業内容、スキル、スケジュール、予算・品質の管理、資源の調達、問題の解決</p>
+                    </div>
+                    <!-- カード4: ビジネスの立上げ -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="mb-4">
+                            <svg class="w-16 h-16 mx-auto text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">ビジネスの立上げ</h3>
+                        <p class="text-gray-600">新規事業の企画立案から事業計画の策定、実行までをトータルで支援します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 私たちの強みセクション -->
+        <section id="strengths" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800">私たちの強み</h2>
+                    <p class="text-gray-600 mt-2">ザードニックが選ばれる理由</p>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-16">
+                    <!-- 強み1: 会計コンサルティングの実績 -->
+                    <div class="flex items-start gap-6 md:gap-10 fade-in-up">
+                        <div class="text-6xl md:text-8xl font-bold text-green-200" style="line-height: 1;">1</div>
+                        <div class="pt-2">
+                            <h3 class="text-2xl font-bold mb-3 text-green-800">会計コンサルティングの実績</h3>
+                            <p class="text-gray-600">専門的な会計知識とコンサルティング実績でお客様の課題を解決します。</p>
+                        </div>
+                    </div>
+                    <!-- 強み2: システム構築の経験 -->
+                    <div class="flex items-start gap-6 md:gap-10 fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="text-6xl md:text-8xl font-bold text-green-200" style="line-height: 1;">2</div>
+                        <div class="pt-2">
+                            <h3 class="text-2xl font-bold mb-3 text-green-800">システム構築の経験</h3>
+                            <p class="text-gray-600">多岐にわたる業種のシステム構築経験が、お客様の成功を支えます。</p>
+                        </div>
+                    </div>
+                    <!-- 強み3: 人工知能を生かした生産性 -->
+                    <div class="flex items-start gap-6 md:gap-10 fade-in-up" style="transition-delay: 0.4s;">
+                        <div class="text-6xl md:text-8xl font-bold text-green-200" style="line-height: 1;">3</div>
+                        <div class="pt-2">
+                            <h3 class="text-2xl font-bold mb-3 text-green-800">人工知能を生かした生産性</h3>
+                            <p class="text-gray-600">最新のAI技術を活用し、お客様の業務プロセスの生産性を飛躍的に向上させます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 会社概要セクション -->
+        <section id="company" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">会社概要</h2>
+                </div>
+                <div class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-6 text-sm">
+                        
+                        <div class="md:col-span-1 font-bold text-gray-700">会社名</div>
+                        <div class="md:col-span-3 text-gray-600">株式会社ザードニック (ZAAD NIC.CO.,LTD.)</div>
+
+                        <div class="md:col-span-4 border-t border-gray-200"></div>
+
+                        <div class="md:col-span-1 font-bold text-gray-700">所在地</div>
+                        <div class="md:col-span-3 text-gray-600">〒151-0053<br>東京都渋谷区代々木1-55-4 山門ビル503号</div>
+
+                        <div class="md:col-span-4 border-t border-gray-200"></div>
+                        
+                        <div class="md:col-span-1 font-bold text-gray-700">TEL / FAX</div>
+                        <div class="md:col-span-3 text-gray-600">TEL: 03-6304-2426 / FAX: 03-6304-2436</div>
+
+                        <div class="md:col-span-4 border-t border-gray-200"></div>
+
+                        <div class="md:col-span-1 font-bold text-gray-700">設立</div>
+                        <div class="md:col-span-3 text-gray-600">2002年4月</div>
+
+                        <div class="md:col-span-4 border-t border-gray-200"></div>
+
+                        <div class="md:col-span-1 font-bold text-gray-700">資本金</div>
+                        <div class="md:col-span-3 text-gray-600">1,000万円</div>
+                        
+                        <div class="md:col-span-4 border-t border-gray-200"></div>
+
+                        <div class="md:col-span-1 font-bold text-gray-700">役員</div>
+                        <div class="md:col-span-3 text-gray-600">代表取締役 嶋野 淳</div>
+
+                        <div class="md:col-span-4 border-t border-gray-200"></div>
+
+                        <div class="md:col-span-1 font-bold text-gray-700">取引銀行</div>
+                        <div class="md:col-span-3 text-gray-600">三井住友銀行 飯田橋支店</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセスセクション -->
+        <section id="access" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">アクセスマップ</h2>
+                </div>
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                    <!-- Google Map -->
+                    <div class="md:col-span-3 fade-in-up">
+                        <div class="shadow-lg rounded-lg overflow-hidden">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d612.2199113729745!2d139.70072126074166!3d35.68417827489201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ccf6f8083ad%3A0x580c2f00e12ec92e!2z5pel5pys44CB44CSMTUxLTAwNTMg5p2x5Lqs6YO95riL6LC35Yy65Luj44CF5pyo77yR5LiB55uu77yV77yV4oiS77yUIOWxsemWgOODk-ODqw!5e0!3m2!1sja!2sus!4v1757480598390!5m2!1sja!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <!-- アクセス情報 -->
+                    <div class="md:col-span-2 fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold mb-2">株式会社ザードニック</h3>
+                            <p class="text-gray-600 mb-6">〒151-0053<br>東京都渋谷区代々木1-55-4<br>山門ビル503号</p>
+                            <h4 class="text-lg font-bold mb-3">最寄り駅からのアクセス</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li><span class="font-bold text-green-700">JR山手線・都営大江戸線</span> 代々木駅 西口/A1出口より徒歩約1分</li>
+                                <li><span class="font-bold text-green-700">小田急線</span> 南新宿駅より徒歩約5分</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 個人情報保護方針セクション -->
+        <section id="privacy" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">個人情報保護方針</h2>
+                </div>
+                <div class="max-w-4xl mx-auto text-gray-700 space-y-8">
+                    <p>株式会社ザードニックは、個人情報の保護及びその適正な取扱いの重要性を認識し、以下のとおりプライバシーポリシーを定め、このポリシーに沿って業務を運営してまいります。</p>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-green-800">基本方針</h3>
+                        <p>当社は、個人情報保護に関する法律に関する規範及びガイドライン等を遵守し、個人情報の保護とその適正な取扱いに努めます。</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-green-800">個人情報の取得</h3>
+                        <p>個人情報保護に関する法律に基づき適正な手段によって取得します。</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-green-800">個人情報の利用目的、第三者への提供</h3>
+                        <p>個人情報保護に関する法律に基づき、次のいずれかに該当する場合を除き、当社の業務のために利用します。</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2 pl-4">
+                            <li>ご本人の同意がある場合</li>
+                            <li>当社が業務目的達成のため必要な範囲で、業務の全部又は一部を外部業者に委託する場合<br>（この場合、1.個人情報保護の水準等の観点から委託先の適正な選定を行います。2.当社と委託先との間で個人情報の秘密保持に関する契約を締結し、委託先が個人情報を適正に取り扱うよう監督します。）</li>
+                            <li>統計的なデーター等に編集し又は他の情報と照合しても個人を識別することができない状態に加工した場合</li>
+                            <li>法令等により開示が必要とされた場合</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-green-800">個人情報の管理</h3>
+                        <p>当社は、取得した個人情報が正確かつ最新の内容を保つよう努め、また個人情報への不正アクセス及び個人情報の紛失、改ざん、漏えい等が生じることのないないよう適切な安全管理措置を講じます。</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-green-800">個人情報の開示、訂正、削除及び第三者提供の停止</h3>
+                        <p>当社が取得した個人情報の開示、訂正、削除等及び第三者提供の停止について、ご本人から申し出があった場合、当社が別に定める手続きにより速やかに対応します。</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-green-800">方針改訂</h3>
+                        <p>このプライバシーポリシーは、個人情報の保護及びその適正な取扱いを維持するため改訂することがあります。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 株式会社ザードニック. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // モバイルメニューのトグル
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // スクロールに応じたフェードインアニメーション
+        const faders = document.querySelectorAll('.fade-in-up');
+        const appearOptions = {
+            threshold: 0.2, // 20%表示されたら発火
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+</html>
+```eof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
