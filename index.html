@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社ザードニック - トップページリニューアル案</title>
+    <title>ザードニック株式会社 - トップページリニューアル案</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* Noto Sans JPをメインフォントに設定 */
         body {
-            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
         }
         /* アニメーション効果 */
         .fade-in-up {
@@ -27,13 +27,22 @@
 
     <!-- ヘッダー -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-800">
-                <a href="#">株式会社ザードニック</a>
-            </div>
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="bg-black rounded-lg h-12 w-12 flex items-center justify-center">
+                    <span class="text-4xl font-bold -mt-1 ml-1" style="line-height: 1;">
+                        <span class="text-white">Z</span><span class="text-green-700">.</span>
+                    </span>
+                </div>
+                <div>
+                    <span class="text-xl font-bold text-gray-800">ザードニック株式会社</span>
+                    <span class="block text-xs text-gray-500" style="letter-spacing: 0.05em;">コンサルティング & ITソリューションズ</span>
+                </div>
+            </a>
             <nav class="hidden md:flex space-x-8">
                 <a href="#services" class="text-gray-600 hover:text-green-700 transition duration-300">事業内容</a>
                 <a href="#strengths" class="text-gray-600 hover:text-green-700 transition duration-300">私たちの強み</a>
+                <a href="#greeting" class="text-gray-600 hover:text-green-700 transition duration-300">代表挨拶</a>
                 <a href="#company" class="text-gray-600 hover:text-green-700 transition duration-300">会社概要</a>
                 <a href="#access" class="text-gray-600 hover:text-green-700 transition duration-300">アクセス</a>
                 <a href="#privacy" class="text-gray-600 hover:text-green-700 transition duration-300">個人情報保護方針</a>
@@ -46,6 +55,7 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#services" class="block py-2 text-gray-600 hover:text-green-700">事業内容</a>
             <a href="#strengths" class="block py-2 text-gray-600 hover:text-green-700">私たちの強み</a>
+            <a href="#greeting" class="block py-2 text-gray-600 hover:text-green-700">代表挨拶</a>
             <a href="#company" class="block py-2 text-gray-600 hover:text-green-700">会社概要</a>
             <a href="#access" class="block py-2 text-gray-600 hover:text-green-700">アクセス</a>
             <a href="#privacy" class="block py-2 text-gray-600 hover:text-green-700">個人情報保護方針</a>
@@ -68,7 +78,7 @@
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-gray-800">事業内容</h2>
-                    <p class="text-gray-600 mt-2">お客様のビジネスを成功に導くサービス</p>
+                    <p class="text-gray-600 mt-2">お客様の業務を成功に導くサービス</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <!-- カード1: コンサルティング -->
@@ -117,7 +127,7 @@
                 <div class="max-w-4xl mx-auto space-y-16">
                     <!-- 強み1: 会計コンサルティングの実績 -->
                     <div class="flex items-start gap-6 md:gap-10 fade-in-up">
-                        <div class="text-6xl md:text-8xl font-bold text-green-200" style="line-height: 1;">1</div>
+                        <div class="text-6xl md:text-8xl font-bold" style="line-height: 1; color: #15803d;">1</div>
                         <div class="pt-2">
                             <h3 class="text-2xl font-bold mb-3 text-green-800">会計コンサルティングの実績</h3>
                             <p class="text-gray-600">専門的な会計知識とコンサルティング実績でお客様の課題を解決します。</p>
@@ -125,20 +135,37 @@
                     </div>
                     <!-- 強み2: システム構築の経験 -->
                     <div class="flex items-start gap-6 md:gap-10 fade-in-up" style="transition-delay: 0.2s;">
-                        <div class="text-6xl md:text-8xl font-bold text-green-200" style="line-height: 1;">2</div>
+                        <div class="text-6xl md:text-8xl font-bold" style="line-height: 1; color: #15803d;">2</div>
                         <div class="pt-2">
                             <h3 class="text-2xl font-bold mb-3 text-green-800">システム構築の経験</h3>
                             <p class="text-gray-600">多岐にわたる業種のシステム構築経験が、お客様の成功を支えます。</p>
                         </div>
                     </div>
-                    <!-- 強み3: 人工知能を生かした生産性 -->
+                    <!-- 強み3: 人工知知能を生かした生産性 -->
                     <div class="flex items-start gap-6 md:gap-10 fade-in-up" style="transition-delay: 0.4s;">
-                        <div class="text-6xl md:text-8xl font-bold text-green-200" style="line-height: 1;">3</div>
+                        <div class="text-6xl md:text-8xl font-bold" style="line-height: 1; color: #15803d;">3</div>
                         <div class="pt-2">
                             <h3 class="text-2xl font-bold mb-3 text-green-800">人工知能を生かした生産性</h3>
-                            <p class="text-gray-600">最新のAI技術を活用し、お客様の業務プロセスの生産性を飛躍的に向上させます。</p>
+                            <p class="text-gray-600">最新のAI技術を活用し、少人数で効率的にサービスを提供します。</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 代表挨拶セクション -->
+        <section id="greeting" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800">代表挨拶</h2>
+                </div>
+                <div class="max-w-4xl mx-auto text-gray-700 space-y-6 leading-relaxed">
+                    <p>ザードニックには二つの意味がこめられています。</p>
+                    <p>一つには、Zという文字で始まるということ。 これは電話帳や会社一覧を念頭にAから始まる会社名をつけることとは全く反対の考え方です。 世の中には目立たないが、良い仕事をする会社もあるといった自負をもって進んでいきたいと思っております。</p>
+                    <p>もう一つは、ザードニックは「リザードン」のように「小さくて強くてかっこいい」こと、すなわち少数精鋭のプロフェッショナル志向を意味しています。</p>
+                    <p>私どもは、この急速に変化する経営環境に身をおき、お客様の会計や原価業務、経営情報を中心に、さまざまなビジネス課題に対応すべく、切磋琢磨していきます。</p>
+                    <p>ザードニックは目立たず、小さくても、お客様より愛され、しかも強く生き延びていくような企業、組織を目指しています。</p>
+                    <p class="text-right mt-8">代表取締役 嶋野 淳</p>
                 </div>
             </div>
         </section>
@@ -153,7 +180,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-6 text-sm">
                         
                         <div class="md:col-span-1 font-bold text-gray-700">会社名</div>
-                        <div class="md:col-span-3 text-gray-600">株式会社ザードニック (ZAAD NIC.CO.,LTD.)</div>
+                        <div class="md:col-span-3 text-gray-600">ザードニック株式会社 (ZAAD NIC.CO.,LTD.)</div>
 
                         <div class="md:col-span-4 border-t border-gray-200"></div>
 
@@ -206,7 +233,7 @@
                     <!-- アクセス情報 -->
                     <div class="md:col-span-2 fade-in-up" style="transition-delay: 0.2s;">
                         <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold mb-2">株式会社ザードニック</h3>
+                            <h3 class="text-xl font-bold mb-2">ザードニック株式会社</h3>
                             <p class="text-gray-600 mb-6">〒151-0053<br>東京都渋谷区代々木1-55-4<br>山門ビル503号</p>
                             <h4 class="text-lg font-bold mb-3">最寄り駅からのアクセス</h4>
                             <ul class="space-y-2 text-gray-600">
@@ -226,7 +253,7 @@
                     <h2 class="text-3xl font-bold text-gray-800">個人情報保護方針</h2>
                 </div>
                 <div class="max-w-4xl mx-auto text-gray-700 space-y-8">
-                    <p>株式会社ザードニックは、個人情報の保護及びその適正な取扱いの重要性を認識し、以下のとおりプライバシーポリシーを定め、このポリシーに沿って業務を運営してまいります。</p>
+                    <p>ザードニック株式会社は、個人情報の保護及びその適正な取扱いの重要性を認識し、以下のとおりプライバシーポリシーを定め、このポリシーに沿って業務を運営してまいります。</p>
                     
                     <div>
                         <h3 class="text-xl font-bold mb-2 text-green-800">基本方針</h3>
@@ -272,7 +299,7 @@
     <!-- フッター -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 株式会社ザードニック. All Rights Reserved.</p>
+            <p>&copy; 2024 ザードニック株式会社. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -309,6 +336,35 @@
 </body>
 </html>
 ```eof
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
